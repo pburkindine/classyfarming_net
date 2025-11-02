@@ -4,6 +4,13 @@ body {
   font-family: Comic Sans MS, sans-serif;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+html {
+  overflow-x: hidden;
+  width: 100%;
 }
 
 .content-container {
@@ -31,11 +38,39 @@ body {
   max-height: 300px;
 }
 
+table {
+  max-width: 100%;
+  table-layout: auto;
+}
+
+table td {
+  white-space: normal;
+  word-wrap: break-word;
+}
+
+.footer-link {
+  text-align: center;
+  line-height: 1.5;
+}
+
+.footer-link a {
+  color: #0000EE;
+  text-decoration: underline;
+  white-space: nowrap;
+}
+
+.roach-icon {
+  height: 25px;
+  vertical-align: middle;
+  margin: 0 3px;
+}
+
 /* Mobile responsive */
 @media (max-width: 768px) {
   .content-container {
     width: 95%;
     padding: 15px;
+    box-sizing: border-box;
   }
 
   .title {
@@ -55,6 +90,27 @@ body {
   .main-image {
     max-height: 200px;
   }
+
+  table {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  table td {
+    padding: 2px;
+  }
+
+  table img {
+    height: 20px !important;
+  }
+
+  .footer-link {
+    font-size: 14px;
+  }
+
+  .roach-icon {
+    height: 20px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -64,6 +120,26 @@ body {
 
   .subtitle {
     font-size: 16px;
+  }
+
+  table {
+    font-size: 12px;
+  }
+
+  table td {
+    padding: 1px;
+  }
+
+  table img {
+    height: 18px !important;
+  }
+
+  .footer-link {
+    font-size: 12px;
+  }
+
+  .roach-icon {
+    height: 18px;
   }
 }
 
