@@ -1,0 +1,69 @@
+/* classy farming - Responsive Styles */
+
+body {
+  font-family: Comic Sans MS, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.content-container {
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.title {
+  letter-spacing: .2em;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  letter-spacing: .1em;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.main-image {
+  max-width: 100%;
+  height: auto;
+  max-height: 300px;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .content-container {
+    width: 95%;
+    padding: 15px;
+  }
+
+  .title {
+    font-size: 24px;
+    letter-spacing: .1em;
+  }
+
+  .subtitle {
+    font-size: 18px;
+  }
+
+  body {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .main-image {
+    max-height: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 20px;
+  }
+
+  .subtitle {
+    font-size: 16px;
+  }
+}
+
